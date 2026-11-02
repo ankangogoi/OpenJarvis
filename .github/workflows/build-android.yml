@@ -38,4 +38,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          args: tauri android build --target aarch64
+         mobile: android
+         args: --target aarch64 --apk
+          
